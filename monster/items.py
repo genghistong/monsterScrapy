@@ -9,5 +9,6 @@ import scrapy
 class MonsterItem(scrapy.Item):
 
 	title =  scrapy.Field()
+	company = scrapy.Field()
 	city = scrapy.Field()
 	state = scrapy.Field()
