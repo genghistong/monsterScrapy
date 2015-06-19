@@ -41,6 +41,7 @@ class MonsterSpider(Spider):
             item['company'] = site.xpath('.//span[@itemprop = "name"]/text()').extract()
             item['city'] = site.xpath('.//span[@itemprop = "addressLocality"]/text()').extract()
             item['state'] = site.xpath('.//span[@itemprop = "addressRegion"]/text()').extract()
+            item['description'] = site.xpath('.//div[@class = "preview"]/text()').extract()
             if item not in items:
                 items.append(item)
             #limiting it to 100 does not work, maybe because it's counting
