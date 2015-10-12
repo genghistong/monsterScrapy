@@ -12,4 +12,5 @@ class MonsterItem(scrapy.Item):
 	company = scrapy.Field()
 	city = scrapy.Field()
 	state = scrapy.Field()
+	link = scrapy.Field()
 	description = scrapy.Field()
